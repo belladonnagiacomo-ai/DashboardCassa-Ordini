@@ -28,12 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            txtArticolo = new TextBox();
+            descr = new Label();
+            prezzo = new Label();
+            numProdotti = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            listBox1 = new ListBox();
+            listaS = new Label();
+            aggiungi = new Button();
+            rimuovi = new Button();
+            label1 = new Label();
+            risultato = new Label();
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // txtArticolo
+            // 
+            txtArticolo.Location = new Point(42, 137);
+            txtArticolo.Name = "txtArticolo";
+            txtArticolo.Size = new Size(141, 27);
+            txtArticolo.TabIndex = 0;
+            // 
+            // descr
+            // 
+            descr.AutoSize = true;
+            descr.Location = new Point(42, 114);
+            descr.Name = "descr";
+            descr.Size = new Size(141, 20);
+            descr.TabIndex = 1;
+            descr.Text = "Descrizione articolo";
+            // 
+            // prezzo
+            // 
+            prezzo.AutoSize = true;
+            prezzo.Location = new Point(42, 182);
+            prezzo.Name = "prezzo";
+            prezzo.Size = new Size(53, 20);
+            prezzo.TabIndex = 2;
+            prezzo.Text = "Prezzo";
+            // 
+            // numProdotti
+            // 
+            numProdotti.AutoSize = true;
+            numProdotti.Location = new Point(169, 182);
+            numProdotti.Name = "numProdotti";
+            numProdotti.Size = new Size(66, 20);
+            numProdotti.TabIndex = 3;
+            numProdotti.Text = "Quantità";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(42, 205);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(86, 27);
+            textBox1.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(169, 205);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(97, 27);
+            textBox2.TabIndex = 5;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.Location = new Point(321, 137);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(293, 224);
+            listBox1.TabIndex = 6;
+            // 
+            // listaS
+            // 
+            listaS.AutoSize = true;
+            listaS.Location = new Point(321, 114);
+            listaS.Name = "listaS";
+            listaS.Size = new Size(80, 20);
+            listaS.TabIndex = 7;
+            listaS.Text = "Lista spesa";
+            // 
+            // aggiungi
+            // 
+            aggiungi.Location = new Point(42, 268);
+            aggiungi.Name = "aggiungi";
+            aggiungi.Size = new Size(224, 29);
+            aggiungi.TabIndex = 8;
+            aggiungi.Text = "+ Aggiungi voce";
+            aggiungi.UseVisualStyleBackColor = true;
+            // 
+            // rimuovi
+            // 
+            rimuovi.Location = new Point(42, 332);
+            rimuovi.Name = "rimuovi";
+            rimuovi.Size = new Size(224, 29);
+            rimuovi.TabIndex = 9;
+            rimuovi.Text = "Rimuovi selezionato";
+            rimuovi.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(45, 440);
+            label1.Name = "label1";
+            label1.Size = new Size(172, 20);
+            label1.TabIndex = 10;
+            label1.Text = "Totale da dare alla cassa";
+            // 
+            // risultato
+            // 
+            risultato.AutoSize = true;
+            risultato.Location = new Point(45, 480);
+            risultato.Name = "risultato";
+            risultato.Size = new Size(0, 20);
+            risultato.TabIndex = 11;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(321, 431);
+            button1.Name = "button1";
+            button1.Size = new Size(293, 29);
+            button1.TabIndex = 12;
+            button1.Text = "Emetti scontrino";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1433, 742);
+            Controls.Add(button1);
+            Controls.Add(risultato);
+            Controls.Add(label1);
+            Controls.Add(rimuovi);
+            Controls.Add(aggiungi);
+            Controls.Add(listaS);
+            Controls.Add(listBox1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(numProdotti);
+            Controls.Add(prezzo);
+            Controls.Add(descr);
+            Controls.Add(txtArticolo);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtArticolo;
+        private Label descr;
+        private Label prezzo;
+        private Label numProdotti;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private ListBox listBox1;
+        private Label listaS;
+        private Button aggiungi;
+        private Button rimuovi;
+        private Label label1;
+        private Label risultato;
+        private Button button1;
     }
 }
