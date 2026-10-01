@@ -7,7 +7,7 @@ namespace DashboardCassa_Ordini
             InitializeComponent();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void lista_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

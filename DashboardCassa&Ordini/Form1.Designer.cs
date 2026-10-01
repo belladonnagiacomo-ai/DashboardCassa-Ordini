@@ -34,13 +34,13 @@
             numProdotti = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            listBox1 = new ListBox();
+            lista = new ListBox();
             listaS = new Label();
             aggiungi = new Button();
             rimuovi = new Button();
             label1 = new Label();
             risultato = new Label();
-            button1 = new Button();
+            scontrino = new Button();
             SuspendLayout();
             // 
             // txtArticolo
@@ -91,14 +91,14 @@
             textBox2.Size = new Size(97, 27);
             textBox2.TabIndex = 5;
             // 
-            // listBox1
+            // lista
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(321, 137);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(293, 224);
-            listBox1.TabIndex = 6;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            lista.FormattingEnabled = true;
+            lista.Location = new Point(321, 137);
+            lista.Name = "lista";
+            lista.Size = new Size(293, 224);
+            lista.TabIndex = 6;
+            lista.SelectedIndexChanged += lista_SelectedIndexChanged;
             // 
             // listaS
             // 
@@ -144,27 +144,27 @@
             risultato.Size = new Size(0, 20);
             risultato.TabIndex = 11;
             // 
-            // button1
+            // scontrino
             // 
-            button1.Location = new Point(321, 431);
-            button1.Name = "button1";
-            button1.Size = new Size(293, 29);
-            button1.TabIndex = 12;
-            button1.Text = "Emetti scontrino";
-            button1.UseVisualStyleBackColor = true;
+            scontrino.Location = new Point(321, 431);
+            scontrino.Name = "scontrino";
+            scontrino.Size = new Size(293, 29);
+            scontrino.TabIndex = 12;
+            scontrino.Text = "Emetti scontrino";
+            scontrino.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1433, 742);
-            Controls.Add(button1);
+            Controls.Add(scontrino);
             Controls.Add(risultato);
             Controls.Add(label1);
             Controls.Add(rimuovi);
             Controls.Add(aggiungi);
             Controls.Add(listaS);
-            Controls.Add(listBox1);
+            Controls.Add(lista);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(numProdotti);
@@ -185,12 +185,12 @@
         private Label numProdotti;
         private TextBox textBox1;
         private TextBox textBox2;
-        private ListBox listBox1;
+        private ListBox lista;
         private Label listaS;
         private Button aggiungi;
         private Button rimuovi;
         private Label label1;
         private Label risultato;
-        private Button button1;
+        private Button scontrino;
     }
 }
